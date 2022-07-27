@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+       <head>
+            <title> pagina de exemplo estrutura basica</title>
+           <meta charset="utf-8">
+           <meta name="autor" conent="Adolfo">
+           <meta name="description" content="Site de inicialização de HTML">
+           <meta name="kewords" content="htmal5, tecnologia, aulas, aprendizado">
+   
+           <style>
+               .formLogin{
+                   width:250px;
+                   margin: 50px auto 0;
+                   font-family: sans-serif;
+               }
+               .formLogin fieldset{
+                   
+                   background: #ccc;
+                   /*cor da tabela*/
+               }
+               
+               .formLogin legend{
+                   background: white;
+                   display: inline-block;
+                   padding: 10px;
+               }
+               
+               .formLogin label{
+                   display:block;
+                   /*margin-top não funciona sem essa propriedade.*/
+                   margin-top: 25px;
+                   /*espaçamento entre o topo das margens*/
+                   margin-bottom: 5px;
+                   /*distanciar o texto dos campos de digitação*/
+               }
+           
+               #user, #pass, .btn{
+                   display: block;
+                   /*quebra de linhas nas descrições de campos*/
+                   width: 100%;
+                   /*logar, fica centralixado*/
+                   box-sizing:border-box;
+                   /*ajusta e diferença das margens, deixando as iguais*/
+                   padding: 15px;
+                   /*ajusta os espaçamento das bordas*/
+                   font-size: 18px;
+                   border: none;
+                   /*tirar a marcação das bordas*/
+               }
+               
+               #user:focus, #pass:focus{
+                   /*vai formata com a cor que deseja ao selecionar o campo com o mouse*/
+                   background: #aad4d6;
+                   
+               }
+               
+               .btn{
+                   margin-top: 15px;
+                   /*ajustar todas as margens dos campos iguais*/ 
+               }
+               #user{
+                   margin-bottom: 15px;
+                   /*espaçamento entre margem de texto*/
+               }
+           </style>
+           
+    </head>
+    <body>
+        
+        <h1>Exemplo de formulário.</h1>
+        
+        <form action="#" method="POST" class="formLogin">
+            <fieldset>
+                
+            <legend>Login</legend> 
+                
+            <label>Digite seu usuário</label>
+            <input type="tex" name="user" id="user" autofocus>
+                
+                <label for="pass">Digite a senha</label>
+                <input type="password" name="pass" id="pass">
+            
+                <input type="submit" value="logar" class="btn">
+                
+        </fieldset>
+        </form> 
+    </body>
+</html>
